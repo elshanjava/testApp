@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: create table information
+      author: Mahmudov Elshan
+      changes:
+        - createTable:
+            tableName: information
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: value
+                  type: NUMERIC(16,2)

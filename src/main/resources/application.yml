@@ -1,0 +1,17 @@
+package:
+  input: C:\Users\Elsen\Desktop\input
+  finished: C:\Users\Elsen\Desktop\finish
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/testapp
+    username: postgres
+    password: 123456
+  batch:
+    job:
+      enabled: false
+    initialize-schema: always
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
+
